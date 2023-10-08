@@ -6,8 +6,13 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- *
- * @author Geoffery Blackard
+ * Geoffery Blackard
+ * COSC 2436
+ * Program Set 1
+ * Resources
+"Complete Guide On 2D Array (Matrix) Rotations - Data Structure and Algorithms Tutorial - 
+* GeeksforGeeks." GeeksforGeeks. Last modified August 22, 2023.
+* https://www.geeksforgeeks.org/complete-guide-on-2d-array-matrix-rotations/#.
  */
 public class HowManyFitsGB {
 
@@ -35,7 +40,7 @@ public class HowManyFitsGB {
     public static int countWaysToFitShapeInGrid(String fileName) throws IOException {
         int count = 0;
         // Instantiate readers
-        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        try{BufferedReader reader = new BufferedReader(new FileReader(fileName));
         StringBuilder shapeBuilder = new StringBuilder();
         StringBuilder gridBuilder = new StringBuilder();
         boolean readingShape = true;
@@ -105,6 +110,9 @@ public class HowManyFitsGB {
 
             }
             shapeArray = rotateShape90(shapeArray);
+        }
+        }catch (IOException e) {
+            System.out.println("Unable to load file. Check the file name and try again.");
         }
         return count;
     }

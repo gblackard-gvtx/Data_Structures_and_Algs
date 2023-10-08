@@ -22,3 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/Problem_Set_1/HowManyFitsGB/target/
+/Problem_Set_1/LandPlotGB/target/
+/Problem_Set_1/FrogMazeGB/target/
+/Quiz_1/QuizEC1/target/
+/Quiz_1/SolutionInFour/target/
