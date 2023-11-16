@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 /**
  *
- * @author gblac
+ * "Binary Tree (Array Implementation)." GeeksforGeeks. Last modified April 6, 2023. https://www.geeksforgeeks.org/binary-tree-array-implementation/#
+ * "Construct Binary Tree from Given Parent Array Representation." GeeksforGeeks. Last modified October 20, 2023. https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/.
  */
 
 class TreeNode {
