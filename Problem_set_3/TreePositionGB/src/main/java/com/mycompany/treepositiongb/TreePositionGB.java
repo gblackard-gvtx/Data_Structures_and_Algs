@@ -7,20 +7,13 @@ package com.mycompany.treepositiongb;
 import java.util.Scanner;
 
 /**
- *
+ * Geoffery Blackard
+ * COSC 2436
+ * Program Set 3
  * "Binary Tree (Array Implementation)." GeeksforGeeks. Last modified April 6, 2023. https://www.geeksforgeeks.org/binary-tree-array-implementation/#
  * "Construct Binary Tree from Given Parent Array Representation." GeeksforGeeks. Last modified October 20, 2023. https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/.
  */
 
-class TreeNode {
-    char data;
-    TreeNode left, right;
-
-    public TreeNode(char data) {
-        this.data = data;
-        this.left = this.right = null;
-    }
-}
     
 public class TreePositionGB {
 
@@ -85,17 +78,14 @@ public class TreePositionGB {
 
         
         while (true) {
-            System.out.println(binArray[pos]);
             for (String string : splitInput) {
                 if (binArray[pos].equals(string.charAt(0))) {
                     //add left to array 
                     int index = (pos*2)+1;
                     binArray[index] = string.charAt(1);
-                    //System.out.println(binArray[index]);
                     //set right
                     index = (pos*2)+2;
                     binArray[index] = string.charAt(2);
-                    //System.out.println(binArray[index]);
                     counter++;
                 }
                 
@@ -105,6 +95,12 @@ public class TreePositionGB {
                 break;
             }
             
+        }
+        for (int i = 0; i < binArray.length; i++) {
+            if (binArray[i].equals('A')) {
+                System.out.println("Position of A: "+ (i));
+                
+            }
         }
     }
 }
